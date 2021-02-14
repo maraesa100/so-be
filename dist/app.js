@@ -46,4 +46,5 @@ router.use(function (req, res) {
 app.use('/api', router);
 app.listen(port);
 console.log('Stockopedia magic happening on port ' + port);
+exports = module.exports = app;
 //# sourceMappingURL=app.js.map

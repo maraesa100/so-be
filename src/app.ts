@@ -3,7 +3,7 @@ const helmet = require('helmet')
 
 const app = express()
 var bodyParser = require('body-parser')
-var db1 = require('./database.js')
+var db1 = require('./database.ts')
 
 // middleware
 // app.use(helmet())
@@ -55,4 +55,7 @@ router.use(function(req, res) {
 app.use('/api', router)
 
 app.listen(port)
+
 console.log('Stockopedia magic happening on port ' + port)
+
+exports = module.exports = app
