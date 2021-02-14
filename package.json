@@ -4,7 +4,7 @@
   "description": "container node-docker",
   "main": "dist/app.js",
   "scripts": {
-    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha",
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha --exit",
     "start": "tsc && node dist/app.js"
   },
   "keywords": [],
