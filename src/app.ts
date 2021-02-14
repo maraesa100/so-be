@@ -3,7 +3,7 @@ const helmet = require('helmet')
 
 const app = express()
 var bodyParser = require('body-parser')
-var db1 = require('./database.ts')
+var db1 = require('./database.js')
 
 // middleware
 // app.use(helmet())
