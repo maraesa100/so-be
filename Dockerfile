@@ -1,12 +1,16 @@
+# from base image node
 FROM node:12.18.1
 ENV NODE_ENV=production
 
-WORKDIR /app
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-COPY ["package.json", "package-lock.json*", "./"]
+COPY package.json .
 
-RUN npm install --production
+RUN npm install
 
-COPY . .
+COPY ./ .
 
-CMD [ "node", "server.js" ]
+EXPOSE 3070
+
+CMD ["npm","start"]
