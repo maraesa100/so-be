@@ -4,11 +4,13 @@ const helmet = require('helmet')
 const app = express()
 var bodyParser = require('body-parser')
 var db1 = require('./database.js')
+var cors = require('cors')
 
 // middleware
-// app.use(helmet())
+app.use(helmet())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
+app.use(cors())
 
 var port = process.env.PORT || 8080
 
