@@ -1,3 +1,5 @@
+App backend for a subscriptin price caculator
+
 ## Docker Build Instructions
 
 docker build -t node-rest-api .
